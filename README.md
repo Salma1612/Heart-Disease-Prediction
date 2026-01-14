@@ -115,11 +115,16 @@ ROC–AUC
 Confusion Matrix
 
 🏆 Results
+
 Algorithm	Accuracy
-Random Forest	85%
-KNN	82%
-SVM	68%
-Naive Bayes	50%
+
+Random Forest-85%
+
+KNN	-82%
+
+SVM	- 68%
+
+Naive Bayes -	50%
 
 ✅ Random Forest performed best
 🔥 Ensemble learning improved performance

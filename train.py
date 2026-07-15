@@ -27,7 +27,6 @@ import os
 
 import joblib
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import seaborn as sns
 
@@ -238,6 +237,9 @@ def evaluate_model(best_model, X_test, y_test):
 
     print("\n===== Classification Report =====")
     print(classification_report(y_test, y_pred))
+
+    print("\n===== Confusion Matrix =====")
+    print(confusion_matrix(y_test, y_pred))
 
     return y_pred, prob
 

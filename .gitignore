@@ -1,3 +1,36 @@
+# Byte-compiled / cache files
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-*.pyc
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Model artifacts (optional - uncomment to exclude from version control)
+# models/*.pkl
+
+# Environment variables
+.env

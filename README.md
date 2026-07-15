@@ -47,6 +47,10 @@ Features include:
 - Number of Major Vessels
 - Thalassemia
 
+Target
+
+- 0 = No Heart Disease
+- 1 = Heart Disease
 ---
 
 ## 🛠 Technologies Used
@@ -75,21 +79,20 @@ Features include:
 9. Model Saving
 
 ---
-## 🤖 Machine Learning Models Compared
-
-The following classification algorithms were implemented and evaluated:
+# 🤖 Machine Learning Algorithms Compared
 
 | Algorithm | Accuracy |
-|-----------|---------:|
-| Random Forest | **90.16%** |
-| K-Nearest Neighbors (KNN) | 85.25% |
-| Support Vector Machine (SVM) | 86.89% |
-| Decision Tree | 83.61% |
-| Logistic Regression | 88.52% |
-| Naive Bayes | 81.97% |
+|-----------|----------|
+| Random Forest (Tuned) | **90.16%** |
+| K-Nearest Neighbors | **90.16%** |
+| Logistic Regression | 86.89% |
+| Naive Bayes | 86.89% |
+| Support Vector Machine | 85.25% |
+| Decision Tree | 72.13% |
 
-🏆 **Random Forest achieved the highest accuracy and ROC-AUC score, making it the final selected model.**
+After evaluating multiple algorithms, the **Random Forest Classifier** was selected as the final model after hyperparameter tuning.
 
+---
 ## 📊 Model Performance
 
 | Metric | Score |
@@ -108,7 +111,34 @@ The following classification algorithms were implemented and evaluated:
 | Heart Disease (1) | 0.87 | 0.93 | 0.90 |
 
 ---
+# ⚙️ Workflow
 
+1. Data Loading
+
+2. Data Cleaning
+
+3. Missing Value Handling
+
+4. Feature Scaling
+
+5. Train-Test Split
+
+6. Model Comparison
+
+- Logistic Regression
+- KNN
+- SVM
+- Decision Tree
+- Naive Bayes
+- Random Forest
+
+7. Hyperparameter Tuning
+
+8. Evaluation
+
+9. Save Model
+
+---
 ## 📈 Visualizations
 
 The notebook contains:
@@ -137,6 +167,16 @@ Heart-Disease-Prediction/
 │   └── scaler.pkl
 │
 ├── images/
+
+│ ├── algorithm_comparison.png
+
+│ ├── confusion_matrix.png
+
+│ ├── roc_curve.png
+
+│ ├── feature_importance.png
+
+│ └── correlation_heatmap.png
 │
 ├── train.py
 ├── predict.py
@@ -195,13 +235,13 @@ The trained models are stored inside the **models/** directory.
 
 ---
 
-## 📌 Future Improvements
+# 📌 Future Scope
 
-- Deploy as a Flask or Streamlit web application.
-- Compare additional machine learning algorithms.
-- Perform feature engineering.
-- Integrate deep learning models.
-- Deploy on cloud platforms.
+- XGBoost
+- Deep Learning
+- Streamlit Deployment
+- Flask API
+- Cloud Deployment
 
 ---
 
@@ -218,8 +258,6 @@ The trained models are stored inside the **models/** directory.
 If you found this project useful:
 
 ⭐ Star this repository
-
-🍴 Fork this repository
 
 📢 Share it with others
 
